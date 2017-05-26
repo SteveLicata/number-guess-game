@@ -7,21 +7,28 @@
   </head>
   <body>
 
+    <h1>Guess a Number!</h1>
+
     <div id="displaynum">
 
     </div>
 
     <br>
 
-    <input type="text" placeholder="Number Between 1-100">
+    <form action="index.html" method="post">
+      <p>Enter a number between 1 - 100</p>
 
-    <br><br>
+      <input type="text" id="usernumber">
 
-    <button type="submit" id="guessbtn">Guess!</button>
+      <br><br>
 
-    <br><br>
+      <button type="button" name="button" id="guessbtn">Guess!</button>
 
-    <button type="submit" id="newgamebtn">New Game</button>
+      <br><br>
+
+      <button type="button" name="button" id="newgamebtn">New Game</button>
+
+    </form>
 
     <script type="text/javascript" src="main.js"></script>
   </body>

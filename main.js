@@ -1,6 +1,7 @@
 window.onload = function() {
 
   var displayNum = document.querySelector("#displaynum");
+  var userNum = document.getElementById("usernumber");
   var guessBtn = document.querySelector("#guessbtn");
   var newGameBtn = document.querySelector("#newgamebtn");
 
@@ -18,9 +19,31 @@ window.onload = function() {
   displayNum.style.display = "none";
   displayNum.innerHTML = random;
 
-  function userGuess() {
 
-  };
+
+  //start new game
+  newGameBtn.addEventListener('click', function() {
+    console.log('new game button clicked');
+    window.location.reload();
+  })
+
+
+
+  //USER GUESS CLICK
+  guessBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log('guess button clicked');
+
+    var userGuess = userNum.value;
+    console.log(userGuess);
+
+    if (userGuess == random) {
+      console.log('user guessed right, wins.');
+    } else {
+      console.log('try again');
+    }
+
+  })
 
 
 
