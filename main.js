@@ -43,7 +43,7 @@ window.onload = function() {
       console.log('try again');
     }
 
-  })
+  });
 
 
 
