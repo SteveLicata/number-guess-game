@@ -23,7 +23,7 @@ window.onload = function() {
 
 
 
-  //start new game
+  //start new game - refreshes page and generates new random number
   newGameBtn.addEventListener('click', function() {
     console.log('new game button clicked');
     window.location.reload();
@@ -31,7 +31,7 @@ window.onload = function() {
 
 
 
-  //USER GUESS CLICK
+  //USER GUESS CLICK - compares random number to user guess and displays info on DOM
   guessBtn.addEventListener("click", function(event) {
     event.preventDefault();
     console.log('guess button clicked');

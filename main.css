@@ -1,3 +1,20 @@
 body {
-  /*background-color: black;*/
+  background-color: black;
+}
+
+h1, h2 {
+  color: ghostwhite;
+  /*text-align: center;*/
+}
+
+#gametext {
+  color: ghostwhite;
+}
+
+#displaynum {
+  color: ghostwhite;
+}
+
+#usernumguess {
+  color: ghostwhite;
 }
