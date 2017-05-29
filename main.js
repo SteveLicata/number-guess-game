@@ -28,21 +28,24 @@ window.onload = function() {
   //empty array to display random numbers on DOM
   var randomNums = [];
 
+  //generate random numbers to insert into empty randomNums array
   //https://stackoverflow.com/questions/5836833/create-a-array-with-random-values-in-javascript
   for (var i = 0, t = 100; i < t; i++) {
     randomNums.push(Math.round(Math.random() * t));
-    setTimeout(function() {
-      randomJSNums.innerHTML = randomNums
-    }, 1000);
   };
 
-  // var domNums = num[Math.floor(Math.random() * num.length)];
-  // console.log(domNums);
-  // randomNums.push(domNums);
-  // console.log(domNums);
-
-  // randomJSNums.innerHTML = setTimeout(function(){randomNums}, 1000);
-
+  //display random numbers on DOM in 2 second intervals
+  if (randomNums !== null) {
+    var i = 0;
+    setInterval(function() {
+      if (i == randomNums.length) {
+        i = 0
+      }
+      randomJSNums.innerHTML = randomNums[i];
+      i++;
+      }, 1000);
+      console.log(randomNums);
+  };
 
 
   //start new game - refreshes page and generates new random number
