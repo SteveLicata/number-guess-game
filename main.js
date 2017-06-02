@@ -34,7 +34,7 @@ window.onload = function() {
     randomNums.push(Math.round(Math.random() * t));
   };
 
-  //display random numbers on DOM in 2 second intervals
+  //display random numbers on DOM in 1 second intervals
   if (randomNums !== null) {
     var i = 0;
     setInterval(function() {
@@ -68,12 +68,16 @@ window.onload = function() {
       gameText.innerHTML = "Great guess! You win!";
       displayNum.style.display = "unset";
       userNumGuess.innerHTML = "Your number is: " + userGuess;
+      randomJSNums.style.display = "none";
     } else {
       console.log('try again');
       gameText.innerHTML = "Try again.";
       displayNum.style.display = "unset";
       userNumGuess.innerHTML = "Your number is: " + userGuess;
+      randomJSNums.style.display = "none";
     }
+
+
   }); //end user guess click
 
 
