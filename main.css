@@ -2,24 +2,19 @@ body {
   background-color: skyblue;
 }
 
-h1, h2, h3 {
+h1, h2, h3, #randomjsnums {
   color: blue;
-  font-family: cursive;
+  font-family: serif;
 }
 
-#gametext {
+#gametext, #displaynum, #usernumguess {
   color: blue;
-  font-family: cursive;
+  font-family: monospace;
+  font-size: 20px;
 }
 
-#displaynum {
-  color: blue;
-}
-
-#usernumguess {
-  color: blue;
-}
-
-#randomjsnums {
-  color: blue;
+p {
+  color: black;
+  font-family: serif;
+  font-size: 20px;
 }
