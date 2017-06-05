@@ -8,6 +8,7 @@ window.onload = function() {
   var guessBtn = document.querySelector("#guessbtn");
   var newGameBtn = document.querySelector("#newgamebtn");
   var randomJSNums = document.getElementById('randomjsnums');
+  var userNumDisplay = document.getElementById('usernumberdisplay');
 
 
   //game numbers variable
@@ -22,7 +23,7 @@ window.onload = function() {
   //hides number from DOM
   displayNum.style.display = "none";
   //text to display when game is played
-  displayNum.innerHTML = "The random number is: " + random;
+  displayNum.innerHTML = "The number is: " + random;
 
 
   //empty array to display random numbers on DOM
@@ -69,12 +70,14 @@ window.onload = function() {
       displayNum.style.display = "unset";
       userNumGuess.innerHTML = "Your number is: " + userGuess;
       randomJSNums.style.display = "none";
+      userNumDisplay.innerHTML = random;
     } else {
       console.log('try again');
       gameText.innerHTML = "Try again.";
       displayNum.style.display = "unset";
       userNumGuess.innerHTML = "Your number is: " + userGuess;
       randomJSNums.style.display = "none";
+      userNumDisplay.innerHTML = random;
     }
 
 

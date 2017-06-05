@@ -2,39 +2,71 @@
 <html>
   <head>
     <meta charset="utf-8">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
     <link rel="stylesheet" href="main.css">
+
     <title>Guess a Number</title>
   </head>
   <body>
 
-    <h1>Guess a Number Between 1 & 100!</h1>
+    <div class="container">
 
-    <div>
-      <h3>Which Number Will It Be??</h3>
-      <h3 id="randomjsnums"></h3>
+      <div class="row">
+        <div class="col s12">
+          <h1>Guess a Number Between 1 & 100!</h1>
+      </div>
     </div>
 
+      <div class="row">
+        <div class="col s8">
+          <h2>Which Number Will It Be?</h2>
+        </div>
+        <div class="col s4">
+          <h2 id="randomjsnums"></h2>
+          <h2 id="usernumberdisplay"></h2>
+        </div>
+      </div>
 
-    <div id="gametext"></div>
+      <div class="row">
+        <div class="col s12">
+          <p id="displaynum"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <p id="usernumguess"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <p id="gametext"></p>
+        </div>
+      </div>
 
-    <div id="displaynum"></div>
+      <form action="index.html" method="post">
+        <div class="row">
+          <div class="col s6">
+            <p>Enter your number:</p>
+            <input type="text" id="usernumber">
+            <br><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s2">
+            <button type="button" name="button" id="guessbtn">Guess</button>
+          </div>
+          <div class="col s2">
+            <button type="button" name="button" id="newgamebtn">New Game</button>
+          </div>
+        </div>
+      </form>
+    </div>
 
-    <div id="usernumguess"></div>
-
-    <form action="index.html" method="post">
-      <h2>Enter your number:</h2>
-
-      <input type="text" id="usernumber">
-
-      <br><br>
-
-      <button type="button" name="button" id="guessbtn">Guess!</button>
-
-      <br><br>
-
-      <button type="button" name="button" id="newgamebtn">New Game</button>
-
-    </form>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
     <script type="text/javascript" src="main.js"></script>
   </body>

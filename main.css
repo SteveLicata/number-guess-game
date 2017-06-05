@@ -4,11 +4,12 @@ body {
 
 h1, h2, h3 {
   color: blue;
-  /*text-align: center;*/
+  font-family: cursive;
 }
 
 #gametext {
   color: blue;
+  font-family: cursive;
 }
 
 #displaynum {
