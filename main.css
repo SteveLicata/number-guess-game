@@ -1,24 +1,24 @@
 body {
-  background-color: black;
+  background-color: skyblue;
 }
 
 h1, h2, h3 {
-  color: ghostwhite;
+  color: blue;
   /*text-align: center;*/
 }
 
 #gametext {
-  color: ghostwhite;
+  color: blue;
 }
 
 #displaynum {
-  color: ghostwhite;
+  color: blue;
 }
 
 #usernumguess {
-  color: ghostwhite;
+  color: blue;
 }
 
 #randomjsnums {
-  color: ghostwhite;
+  color: blue;
 }
