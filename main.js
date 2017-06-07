@@ -75,13 +75,22 @@ window.onload = function() {
       userNumGuess.innerHTML = "Your number is: " + userGuess;
       randomJSNums.style.display = "none";
       userNumDisplay.innerHTML = random;
-    } else {
-      console.log('try again');
-      gameText.innerHTML = "Try again.";
+    } else if (userGuess != random && userGuess != null && userGuess != 0 && userGuess < 10){
+      console.log('user guessed wrong, try again');
+      gameText.innerHTML = "Start a new game and try again.";
       displayNum.style.display = "unset";
       userNumGuess.innerHTML = "Your number is: " + userGuess;
       randomJSNums.style.display = "none";
       userNumDisplay.innerHTML = random;
+    } else if (userGuess == 0) {
+      console.log("user guessed 0, invalid number");
+      //covers 0, blank answer, empty space
+      gameText.innerHTML = "Start a new game and enter a valid number";
+    } else if (userGuess > 10){
+      console.log("user guessed greater than 10, invalid number");
+      gameText.innerHTML = "Start a new game and enter a valid number"
+    } else {
+      console.log("else");
     }
 
 
