@@ -9,7 +9,8 @@ window.onload = function() {
   var newGameBtn = document.querySelector("#newgamebtn");
   var randomJSNums = document.getElementById('randomjsnums');
   var userNumDisplay = document.getElementById('usernumberdisplay');
-
+  var whichNum = document.getElementById('whichnum');
+  var whichNumDisplay = document.getElementById('whichnumdisplay');
 
   //game numbers variable
   // var num = [
@@ -70,18 +71,22 @@ window.onload = function() {
 
     if (userGuess == random) {
       console.log('user guessed right, wins.');
+      whichNum.style.display = "none";
+      whichNumDisplay.innerHTML = "The number is: " + random;
       gameText.innerHTML = "Great guess! You win!";
-      displayNum.style.display = "unset";
+      // displayNum.style.display = "unset";
       userNumGuess.innerHTML = "Your number is: " + userGuess;
       randomJSNums.style.display = "none";
-      userNumDisplay.innerHTML = random;
+      // userNumDisplay.innerHTML = random;
     } else if (userGuess != random && userGuess != null && userGuess != 0 && userGuess < 10){
       console.log('user guessed wrong, try again');
+      whichNum.style.display = "none";
+      whichNumDisplay.innerHTML = "The number is: " + random;
       gameText.innerHTML = "Start a new game and try again.";
-      displayNum.style.display = "unset";
+      // displayNum.style.display = "unset";
       userNumGuess.innerHTML = "Your number is: " + userGuess;
       randomJSNums.style.display = "none";
-      userNumDisplay.innerHTML = random;
+      // userNumDisplay.innerHTML = random;
     } else if (userGuess == 0) {
       console.log("user guessed 0, invalid number");
       //covers 0, blank answer, empty space
