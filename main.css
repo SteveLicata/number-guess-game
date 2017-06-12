@@ -27,3 +27,12 @@ p {
   margin: 0 auto;
   width: 50%
 }
+
+.score {
+  margin: 0 auto;
+  width: 50%;
+}
+
+h5 {
+  color: red;
+}

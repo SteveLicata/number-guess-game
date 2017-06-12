@@ -11,6 +11,9 @@ window.onload = function() {
   var userNumDisplay = document.getElementById('usernumberdisplay');
   var whichNum = document.getElementById('whichnum');
   var whichNumDisplay = document.getElementById('whichnumdisplay');
+  var wins = document.getElementById('wins');
+  var losses = document.getElementById('losses');
+  var gameScore = 0;
 
   //game numbers variable
   // var num = [
@@ -78,6 +81,7 @@ window.onload = function() {
       userNumGuess.innerHTML = "Your number is: " + userGuess;
       randomJSNums.style.display = "none";
       // userNumDisplay.innerHTML = random;
+      wins.innerHTML = gameScore +1;
     } else if (userGuess != random && userGuess != null && userGuess != 0 && userGuess < 10){
       console.log('user guessed wrong, try again');
       whichNum.style.display = "none";
@@ -87,6 +91,7 @@ window.onload = function() {
       userNumGuess.innerHTML = "Your number is: " + userGuess;
       randomJSNums.style.display = "none";
       // userNumDisplay.innerHTML = random;
+      losses.innerHTML = gameScore +1;
     } else if (userGuess == 0) {
       console.log("user guessed 0, invalid number");
       //covers 0, blank answer, empty space
@@ -100,8 +105,6 @@ window.onload = function() {
 
 
   }); //end user guess click
-
-
 
 
 
