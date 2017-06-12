@@ -15,58 +15,64 @@
     <div class="container cont">
 
       <div class="row">
-        <div class="col s12">
+        <div class="col s12 m12 l12">
           <center><h1>Guess a Number From 1 to 10!</h1>
         </div>
       </div>
 
       <div class="row">
-        <div class="col s8">
+        <div class="col s12 m12 l12">
           <center><h2>Which Number Will It Be?</h2>
         </div>
-        <div class="col s4">
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l12">
           <center><h2 id="randomjsnums"></h2>
           <center><h2 id="usernumberdisplay"></h2>
         </div>
       </div>
 
       <div class="row">
-        <div class="col s12">
+        <div class="col s12 m12 l12">
           <p id="displaynum"></p>
         </div>
       </div>
       <div class="row">
-        <div class="col s12">
+        <div class="col s12 m12 l12">
           <p id="usernumguess"></p>
         </div>
       </div>
       <div class="row">
-        <div class="col s12">
+        <div class="col s12 m12 l12">
           <p id="gametext"></p>
         </div>
       </div>
 
-      <form action="index.html" method="post">
-        <div class="row">
-          <div class="col s6">
-            <p>Enter your number:</p>
-            <input type="text" id="usernumber">
-            <br><br>
+      <div class="form">
+        <form action="index.html" method="post">
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <p>Enter your number:</p>
+              <input type="text" id="usernumber">
+              <br><br>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col s2">
-            <button type="button" name="button" id="guessbtn">Guess</button>
+          <div class="row">
+            <div class="col s4 m4 l4">
+              <button type="button" name="button" id="guessbtn">Guess</button>
+            </div>
+            <div class="col s4 m4 l4">
+              <button type="button" name="button" id="newgamebtn">New   Game</button>
+            </div>
           </div>
-          <div class="col s2">
-            <button type="button" name="button" id="newgamebtn">New Game</button>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
+
       <br>
       <br>
       <br>
       <br>
+
     </div>
 
     <!-- Compiled and minified JavaScript -->
