@@ -82,7 +82,7 @@ window.onload = function() {
       randomJSNums.style.display = "none";
       // userNumDisplay.innerHTML = random;
       wins.innerHTML = gameScore +1;
-    } else if (userGuess != random && userGuess != null && userGuess != 0 && userGuess < 10){
+    } else if (userGuess != random && userGuess != null && userGuess != 0 && userGuess <= 10){
       console.log('user guessed wrong, try again');
       whichNum.style.display = "none";
       whichNumDisplay.innerHTML = "The number is: " + random;
