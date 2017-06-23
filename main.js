@@ -95,7 +95,7 @@ window.onload = function() {
     } else {
       console.log("else");
     }
-    
+
   }); //end user guess click
 
 

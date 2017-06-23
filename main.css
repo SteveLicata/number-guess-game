@@ -1,30 +1,14 @@
-canvas {
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				background: transparent;
-			}
-
-
-
 body {
-  background-color: royalblue;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
+  background-color: #CF4647;
 }
 
 .cont {
-  background-color: skyblue;
+  background-color: #F5D061;
 }
 
 h1, h2, h3, #randomjsnums {
   color: blue;
-  font-family: serif;
+  font-family: helvetica;
 }
 
 #gametext, #displaynum, #usernumguess {
@@ -41,7 +25,7 @@ p {
 
 .form {
   margin: 0 auto;
-  width: 50%
+  width: 50%;
 }
 
 .score {
@@ -51,4 +35,8 @@ p {
 
 h5 {
   color: black;
+}
+
+.newcolor {
+  background-color: #F8F6F6;
 }
