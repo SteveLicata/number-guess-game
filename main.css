@@ -6,20 +6,20 @@ body {
   background-color: #F5D061;
 }
 
-h1, h2, h3, #randomjsnums {
+h1, h2, h3, h5, #randomjsnums {
   color: blue;
-  font-family: helvetica;
+  font-family: 'Patrick Hand SC', cursive;
 }
 
 #gametext, #displaynum, #usernumguess {
   color: blue;
-  font-family: monospace;
-  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
 }
 
 p {
   color: black;
-  font-family: serif;
+  font-family: 'Indie Flower', cursive;
   font-size: 30px;
 }
 

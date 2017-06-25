@@ -1,4 +1,4 @@
-JavaScript "Guess the Number" Game. Try to guess the auto-generated, random number between 1 & 10. 
+JavaScript "Guess the Number" Game. Try to guess the auto-generated, random number between 1 & 10.
 
 -HTML5
 
@@ -9,3 +9,5 @@ JavaScript "Guess the Number" Game. Try to guess the auto-generated, random numb
 -Materialize
 
 -ColorHunt.io
+
+-Google Fonts

@@ -11,6 +11,7 @@ window.onload = function() {
   var userNumDisplay = document.getElementById('usernumberdisplay');
   var whichNum = document.getElementById('whichnum');
   var whichNumDisplay = document.getElementById('whichnumdisplay');
+  var displaydiv = document.getElementById('displaydiv');
   var wins = document.getElementById('wins');
   var losses = document.getElementById('losses');
   var gameScore = 0;
@@ -25,6 +26,10 @@ window.onload = function() {
   displayNum.style.display = "none";
   //text to display when game is played
   displayNum.innerHTML = "The number is: " + random;
+  //hides divs under random numbers when page loads
+  userNumGuess.style.display = "none";
+  gameText.style.display = "none";
+
 
 
   //empty array to display random numbers on DOM
@@ -67,6 +72,9 @@ window.onload = function() {
 
     if (userGuess == random) {
       console.log('user guessed right, wins.');
+      //brings back hidden divs
+      userNumGuess.style.display = "unset";
+      gameText.style.display = "unset";
       whichNum.style.display = "none";
       whichNumDisplay.innerHTML = "The number is: " + random;
       gameText.innerHTML = "Great guess! You win!";
@@ -77,6 +85,9 @@ window.onload = function() {
       wins.innerHTML = gameScore +1;
     } else if (userGuess != random && userGuess != null && userGuess != 0 && userGuess <= 10){
       console.log('user guessed wrong, try again');
+      //brings back hidden divs
+      userNumGuess.style.display = "unset";
+      gameText.style.display = "unset";
       whichNum.style.display = "none";
       whichNumDisplay.innerHTML = "The number is: " + random;
       gameText.innerHTML = "Start a new game and try again.";
@@ -86,10 +97,16 @@ window.onload = function() {
       // userNumDisplay.innerHTML = random;
       losses.innerHTML = gameScore +1;
     } else if (userGuess == 0) {
+      //brings back hidden divs
+      userNumGuess.style.display = "unset";
+      gameText.style.display = "unset";
       console.log("user guessed 0, invalid number");
       //covers 0, blank answer, empty space
       gameText.innerHTML = "Start a new game and enter a valid number";
     } else if (userGuess > 10){
+      //brings back hidden divs
+      userNumGuess.style.display = "unset";
+      gameText.style.display = "unset";
       console.log("user guessed greater than 10, invalid number");
       gameText.innerHTML = "Start a new game and enter a valid number"
     } else {
